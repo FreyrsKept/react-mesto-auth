@@ -192,9 +192,9 @@ function App() {
       <div className='page'>
         <div className='page__content'>
           <Routes>
-            <Route path="sign-in" element={
+            <Route path="/sign-in" element={
               <>
-                <Header title="Регистрация" route="sign-in" />
+                <Header title="Регистрация" route="/sign-in" />
                 <Login onLogin={onLogin} />
               </>
             } />

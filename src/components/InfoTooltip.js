@@ -4,7 +4,7 @@ function InfoTooltip(props) {
       <div className="popup__info">
         <img className="popup__status" src={props.image} alt={props.title} />
         <h2 className="popup__message">{props.title}</h2>
-        <button className="popup__btn-close" type="button" title="Закрыть" onClick={props.onClose} />
+        <button className="popup__close" type="button" title="Закрыть" onClick={props.onClose} />
       </div>
     </div>
   );
