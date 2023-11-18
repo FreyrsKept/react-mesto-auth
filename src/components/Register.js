@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react";
+import { Link } from "react-router-dom";
 
 function Register(props) {
   const [email, setEmail] = useState("")
@@ -24,7 +24,7 @@ function Register(props) {
         <input className="login__input" type="password" placeholder="Пароль" value={passsword} onChange={handlePasswordInput} autoComplete="on" required></input>
         <button className="login__button" type="submit">Зарегистрироваться</button>
       </form>
-      <p className="login__sign-in">Уже зарегистрированы?<Link to="/sign-in" className="login__link">Войти</Link> </p>
+      <p className="login__text">Уже зарегистрированы? <Link to="/sign-in" className="login__link">Войти</Link> </p>
     </section>
   )
 }

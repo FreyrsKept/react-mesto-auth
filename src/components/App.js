@@ -178,6 +178,7 @@ function App() {
     setIsEditProfilePopupOpen(false);
     setIsAddPlacePopupOpen(false);
     setSelectedCard(null);
+    setInfoTooltip(false);
   }
 
   function onSignOut() {
@@ -189,17 +190,17 @@ function App() {
 
   return (
     <CurrentUserContext.Provider value={currentUser}>
-      <div className='page'>
-        <div className='page__content'>
+      <div className="page">
+        <div className="page__content">
           <Routes>
             <Route path="/sign-in" element={
               <>
-                <Header title="Регистрация" route="/sign-in" />
+                <Header title="Регистрация" route="/sign-up" />
                 <Login onLogin={onLogin} />
               </>
             } />
 
-            <Route path="/sing-up" element={
+            <Route path="/sign-up" element={
               <>
                 <Header title="Войти" route="/sign-in" />
                 <Register onRegister={onRegister} />
